@@ -38,6 +38,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="movie-result">
       <p id="movie-text"></p>
+      <img id="rightanswer" src="">
     </div>
     <hr />
     <!-- Book Question -->
@@ -55,6 +56,7 @@ Select ONE Additional Feature to Add
     </form>
     <div id="book-result">
       <p id="book-text"></p>
+      <img id="goodanswer" src="">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -68,6 +70,7 @@ Select ONE Additional Feature to Add
 
         if (answer === "movie1") {
           $("#movie-text").text("YESSSS!");
+          $("#rightanswer"). attr("src","https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png")
         } 
         else {
           $("#movie-text").text("Try Again!");
@@ -83,6 +86,8 @@ Select ONE Additional Feature to Add
 
         if (answer === "book1") {
           $("#book-text").text("YESSSS!");
+          $("#goodanswer"). attr("src","https://imgix.bustle.com/uploads/getty/2024/6/24/f0baaea0/sza-accepts-the-song.jpg?w=1200&h=900&fit=crop&crop=focalpoint&fm=jpg&fp-x=0.4565&fp-y=0.1936"
+          )
         } 
         else {
           $("#book-text").text("Try Again!");
