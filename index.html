@@ -21,7 +21,7 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About Laila!!</h1>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
@@ -52,11 +52,11 @@ Select ONE Additional Feature to Add
           <option value="book4">Jhene Aiko</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Your Answer</button>
     </form>
     <div id="book-result">
       <p id="book-text"></p>
-      <img id="goodanswer" src="">
+      <img id="goodanswer" src="" width="400">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -68,12 +68,13 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
+        if (answer === "movie4") {
           $("#movie-text").text("YESSSS!");
-          $("#rightanswer"). attr("src","https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png")
+          $("#rightanswer"). attr("src","https://upload.wikimedia.org/wikipedia/en/7/7a/Sweetener_album_cover.png"
+          )
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#movie-text").text("No.Try Again!");
         }
       });
 
@@ -90,7 +91,7 @@ Select ONE Additional Feature to Add
           )
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#book-text").text("Wrong! Try Again!");
         }
       });
       

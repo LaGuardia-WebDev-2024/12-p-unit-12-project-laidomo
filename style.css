@@ -18,5 +18,9 @@
 
 hr {
   height: 5px;
-  background-color: black;
+  background-color: rgb(47, 87, 90);
+}
+
+html {
+  background: rgb(204, 245, 240)
 }
